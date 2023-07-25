@@ -1,0 +1,40 @@
+<html>
+ <head>
+   <title>fifth program</title>
+   <style>
+     body {
+       text-align:center;
+       margin-top:60px;
+       background-color:#85C1E9;
+     }
+     h2 {
+       font-size:45px;
+       color:#8E44AD;
+       text-decoration:underline #1ABC9C;
+     }
+     p {
+       font-size:25px;
+       color:#D35400;
+     }
+     button {
+       background-color:#58D68D;
+       padding:10px 12px;
+     }
+    </style>
+ </head>
+ <body>
+   <h2> Area of Square </h2>
+   <p>Enter the side of a square : <input id="side"></p>
+   <button type=button onclick="area()">Calculate Area</button>
+   <p> area = <input id="output"></p>
+   <script>
+     function area() {
+       var Area,r;
+        const pi=3.14;
+       r=parseInt(document.getElementById("side").value);
+       Area = (pi*r*r);
+       document.getElementById("output").value = Area;
+     }
+   </script>
+ </body>
+</html>

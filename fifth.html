@@ -1,0 +1,65 @@
+<html>
+ <head>
+   <title>fifth program</title>
+   <style>
+     body {
+       text-align:center;
+       margin-top:60px;
+       background-color:#85C1E9;
+     }
+     h2 {
+       font-size:45px;
+       color:#8E44AD;
+       text-decoration:underline #1ABC9C;
+     }
+     p {
+       font-size:25px;
+       color:#D35400;
+     }
+     #prin {
+       font-size:20px;
+     }
+     #prin:hover {
+       background-color:#D7DBDD;
+     }
+     #rate {
+       font-size:20px;
+     }
+     #rate:hover {
+       background-color:#D7DBDD;
+     }
+     #year {
+       font-size:20px;
+     }
+     #year:hover {
+       background-color:#D7DBDD;
+     }
+     #output {
+       font-size:20px;
+     }
+     button {
+       background-color:#58D68D;
+       padding:10px 12px;
+     }
+   </style>
+ </head>
+ <body>
+   <h2> Compound Interest </h2>
+   <p>Enter principal : <input id="prin"></p>
+   <p>Enter Rate of Interest : <input id="rate"></p>
+   <p>Enter Years : <input id="year"></p>
+   <button type="button" onclick="interest()">Calculate Interest</button>
+   <p>Interest = <input id="output"></p>
+  <script>
+   function interest() {
+     var p,r,n,amount,Interest;
+     p=parseInt(document.getElementById("prin").value);
+     r=parseInt(document.getElementById("rate").value);
+     n=parseInt(document.getElementById("year").value);
+     amount=parseInt(p*(Math.pow(1+(r/100),n)));
+     Interest=amount-p;
+     document.getElementById("output").value= Interest;
+   }
+  </script>
+ </body>
+</html>

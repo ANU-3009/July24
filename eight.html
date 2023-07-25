@@ -1,0 +1,38 @@
+<html>
+ <head>
+   <title>eight program</title>
+ <style>
+    body {
+     text-align:center;
+     margin-top:50px;
+     background-color:#F9E79F;
+    }
+    p {
+   font-size:20px;
+   color:#85C1E9;
+  }
+  h2 {
+    font-size:30px;
+    color:#D35400;
+    text-decoration:underline #8E44AD;
+  }
+  button {
+    padding:7px 10px;
+  }
+  </style>
+ </head>
+ <body>
+  <h2> cube of a number </h2>
+  <p>Enter the number:<input id="num"></p>
+  <button type="button" onClick="cube1()"> calculate  </button>
+  <p>Result =<input id="output"></p>
+  <script>
+     function cube1() {
+       var num1,result;
+       num1 = parseInt(document.getElementById("num").value);
+       result = num1*num1*num1;
+       document.getElementById("output").value = result;
+     }
+   </script>
+ </body>
+ </html>
